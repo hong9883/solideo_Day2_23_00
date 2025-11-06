@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 System Resource Monitoring Application
 실시간 시스템 리소스 모니터링 및 PDF 보고서 생성

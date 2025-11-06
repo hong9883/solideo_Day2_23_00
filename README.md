@@ -131,12 +131,29 @@ self.update_interval = 2000  # 2초
 ```
 
 ### 한글 폰트 설정
-시스템에 한글 폰트가 설치되어 있으면 자동으로 감지됩니다.
-- Linux: NanumGothic (`/usr/share/fonts/truetype/nanum/`)
-- macOS: AppleSDGothicNeo
-- Windows: 맑은 고딕
 
-수동 설정이 필요한 경우 `pdf_generator.py`의 `font_paths` 리스트에 경로 추가:
+✨ **자동 폰트 지원 (개선됨!)**
+
+이 프로그램은 한글을 완벽하게 지원하며, 다음과 같은 방식으로 작동합니다:
+
+1. **자동 폰트 감지**
+   - Linux: NanumGothic, NanumBarunGothic (`/usr/share/fonts/truetype/nanum/`)
+   - macOS: AppleSDGothicNeo, AppleGothic
+   - Windows: 맑은 고딕, 굴림
+
+2. **자동 폰트 다운로드**
+   - 시스템에 한글 폰트가 없으면 자동으로 NanumGothic 폰트를 다운로드합니다
+   - 다운로드 위치: `~/.fonts/NanumGothic.ttf`
+   - 인터넷 연결이 필요합니다
+
+3. **PDF 및 그래프 모두 한글 지원**
+   - PDF 보고서의 모든 텍스트가 한글로 표시됩니다
+   - Matplotlib 그래프 레이블도 한글로 표시됩니다
+
+4. **UTF-8 인코딩**
+   - 모든 소스 파일이 UTF-8로 인코딩되어 한글이 깨지지 않습니다
+
+수동으로 폰트를 설정하려면 `pdf_generator.py`의 `font_paths` 리스트에 경로 추가:
 ```python
 font_paths = [
     '/your/custom/font/path.ttf',

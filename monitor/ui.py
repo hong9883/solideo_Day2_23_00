@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Real-time System Monitoring UI with Tkinter and Matplotlib
 """

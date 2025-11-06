@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 System Resource Data Collector Module
 Collects CPU, Memory, Disk I/O, and Network statistics
