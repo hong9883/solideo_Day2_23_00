@@ -1,0 +1,17 @@
+# System Resource Monitoring Dependencies
+
+# System monitoring
+psutil>=5.9.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# PDF generation
+reportlab>=4.0.0
+
+# Optional: GPU monitoring (uncomment if needed)
+# GPUtil==1.4.0
+# py3nvml==0.2.7
+
+# Optional: CPU info
+# py-cpuinfo==9.0.0
